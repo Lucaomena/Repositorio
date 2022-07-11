@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import Curriculum from '../assets/img/CurriculumLucasOmena.pdf'
 
 export const NavBar = () => {
 
@@ -50,7 +51,7 @@ export const NavBar = () => {
               <a href="https://www.instagram.com/lucaomena/"><img src={navIcon3} alt="" /></a>
             </div>
 
-            <button className="vvd" onClick={() => console.log('Contact.js')}><span>Vamos nos conectar?</span></button>
+            <button className="vvd" onClick={() => console.log('Contact.js')}><span><a href={Curriculum}>Curriculum Vitae</a></span></button>
           </span>
         </Navbar.Collapse>
       </Container>

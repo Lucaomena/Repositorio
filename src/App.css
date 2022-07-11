@@ -47,8 +47,6 @@ p, a, li, button, ul {
   padding: 0;
   border: 0;
   line-height: normal;
-  text-decoration: none;
-  background-color: transparent;
 }
 
 a:hover {
