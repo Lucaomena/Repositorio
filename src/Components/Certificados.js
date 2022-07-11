@@ -17,6 +17,10 @@ import Css3 from "../assets/img/certificados/Css3.png";
 import Git1 from "../assets/img/certificados/Git1.png";
 import Git2 from "../assets/img/certificados/Git2.png";
 import Pensa from "../assets/img/certificados/P1.png";
+import An2 from "../assets/img/certificados/An2.png";
+import An3 from "../assets/img/certificados/An3.png";
+import An4 from "../assets/img/certificados/An4.png";
+import An5 from "../assets/img/certificados/An5.png";
 import insta from "../assets/img/insta.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -113,6 +117,28 @@ export const Certificados = () => {
             imgUrl: Git2,
         },
     ]
+    const certificados3 = [
+        {
+            title: "Trabalhando com Páginas SPA com Angular",
+            description: "Certificado Angular-SPA",
+            imgUrl: An2,
+        },
+        {
+            title: "Arquitetura de componentes",
+            description: "Certificado Angular-Complexidade no Front",
+            imgUrl: An3,
+        },
+        {
+            title: "Instalando e preparando o ambiente Angular",
+            description: "Certificado Angular-Intalação",
+            imgUrl: An4,
+        },
+        {
+            title: "Explorando diretivas com Angular",
+            description: "Certificado Angular-Diretivas",
+            imgUrl: An5,
+        },
+    ]
 
     return (
         <section className="project" id="project">
@@ -153,7 +179,7 @@ export const Certificados = () => {
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="second">
                                                 <Row>
-                                                {
+                                                    {
                                                         certificados2.map((project, index) => {
                                                             return (
                                                                 <Certificado
@@ -166,15 +192,28 @@ export const Certificados = () => {
                                                 </Row>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="third">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                                <Row>
+                                                    {
+                                                        certificados3.map((project, index) => {
+                                                            return (
+                                                                <Certificado
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     </Tab.Container>
                                 </div>}
+                                
                         </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
+            
             <img className="background-image-right" src={colorSharp2}></img>
         </section>
     )
