@@ -21,7 +21,7 @@ export const Footer = () => {
               <a href="https://web.facebook.com/lucas.omena.37/"><img src={navIcon2} alt="" /></a>
               <a href="https://www.instagram.com/lucaomena/"><img src={navIcon3} alt="" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Copyright 2022. Acesse ao meu Portfolio no GitHub para encontrar este codigo</p>
           </Col>
         </Row>
       </Container>

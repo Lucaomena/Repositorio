@@ -34,24 +34,28 @@ export const Skills = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
-                            <h2>Skills</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <h2>Soft Skills</h2>
+                            <p> As habilidades humanas sempre foram importantes na história. No passado eram importantes, no presente são superimportantes e, no futuro, serão fundamentais! (Glauter F. Jannuzzi) </p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5>Ouvir as pessoas</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <h5>Facilidade em expressar ideias</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <h5>Atitude positiva frente aos desafios</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5>Empatia com o sentimento dos outros</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Pensamento crítico com foco em buscar soluções</h5>
                                 </div>
                             </Carousel>
                         </div>
