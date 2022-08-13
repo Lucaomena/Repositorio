@@ -21,7 +21,6 @@ import An2 from "../assets/img/certificados/An2.png";
 import An3 from "../assets/img/certificados/An3.png";
 import An4 from "../assets/img/certificados/An4.png";
 import An5 from "../assets/img/certificados/An5.png";
-import insta from "../assets/img/insta.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -139,9 +138,75 @@ export const Certificados = () => {
             imgUrl: An5,
         },
     ]
+    const certificados4 = [
+        {
+            title: "Trabalhando com Páginas SPA com Angular",
+            description: "Certificado Angular-SPA",
+            imgUrl: An2,
+        },
+        {
+            title: "Arquitetura de componentes",
+            description: "Certificado Angular-Complexidade no Front",
+            imgUrl: An3,
+        },
+        {
+            title: "Instalando e preparando o ambiente Angular",
+            description: "Certificado Angular-Intalação",
+            imgUrl: An4,
+        },
+        {
+            title: "Explorando diretivas com Angular",
+            description: "Certificado Angular-Diretivas",
+            imgUrl: An5,
+        },
+    ]
+    const certificados5 = [
+        {
+            title: "Trabalhando com Páginas SPA com Angular",
+            description: "Certificado Angular-SPA",
+            imgUrl: An2,
+        },
+        {
+            title: "Arquitetura de componentes",
+            description: "Certificado Angular-Complexidade no Front",
+            imgUrl: An3,
+        },
+        {
+            title: "Instalando e preparando o ambiente Angular",
+            description: "Certificado Angular-Intalação",
+            imgUrl: An4,
+        },
+        {
+            title: "Explorando diretivas com Angular",
+            description: "Certificado Angular-Diretivas",
+            imgUrl: An5,
+        },
+    ]
+    const certificados6 = [
+        {
+            title: "Trabalhando com Páginas SPA com Angular",
+            description: "Certificado Angular-SPA",
+            imgUrl: An2,
+        },
+        {
+            title: "Arquitetura de componentes",
+            description: "Certificado Angular-Complexidade no Front",
+            imgUrl: An3,
+        },
+        {
+            title: "Instalando e preparando o ambiente Angular",
+            description: "Certificado Angular-Intalação",
+            imgUrl: An4,
+        },
+        {
+            title: "Explorando diretivas com Angular",
+            description: "Certificado Angular-Diretivas",
+            imgUrl: An5,
+        },
+    ]
 
     return (
-        <section className="project" id="project">
+        <section className="project" id="certificados">
             <Container>
                 <Row>
                     <Col size={12}>
@@ -151,17 +216,29 @@ export const Certificados = () => {
                                     <h2>Certificados</h2>
                                     <p>Segue alguns certificados</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                                        <Nav variant="pills" className="nav-pills mb-1 justify-content-center align-items-center" id="pills-tab">
                                             <Nav.Item>
                                                 <Nav.Link eventKey="first">JavaScript</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="second">Css/GitHub</Nav.Link>
+                                                <Nav.Link eventKey="second">Css3</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
                                                 <Nav.Link eventKey="third">Angular</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
+                                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="fourth">Linux</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="fifth">Git</Nav.Link>
+                                            </Nav.Item>
+                                            <Nav.Item>
+                                                <Nav.Link eventKey="sixth">Docker</Nav.Link>
+                                            </Nav.Item>
+                                        </Nav>
+                                        
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                             <Tab.Pane eventKey="first">
                                                 <Row>
@@ -205,16 +282,60 @@ export const Certificados = () => {
                                                     }
                                                 </Row>
                                             </Tab.Pane>
+                                            <Tab.Pane eventKey="fourth">
+                                                <Row>
+                                                    {
+                                                        certificados4.map((project, index) => {
+                                                            return (
+                                                                <Certificado
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="fifth">
+                                                <Row>
+                                                    {
+                                                        certificados5.map((project, index) => {
+                                                            return (
+                                                                <Certificado
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="sixth">
+                                                <Row>
+                                                    {
+                                                        certificados6.map((project, index) => {
+                                                            return (
+                                                                <Certificado
+                                                                    key={index}
+                                                                    {...project}
+                                                                />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
+                                            </Tab.Pane>
                                         </Tab.Content>
                                     </Tab.Container>
+
+
                                 </div>}
-                                
+
                         </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
-            
-            <img className="background-image-right" src={colorSharp2}></img>
+
+
         </section>
     )
 }
