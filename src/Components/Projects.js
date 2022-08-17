@@ -10,20 +10,14 @@ export const Projects = () => {
 
   const projects1 = [
     {
-      title: "Recriando pagina do Instagram",
-      description: "Design & Development",
-      imgUrl: insta,
-      html_url:"https://github.com/Lucaomena/RecriandoPg.git",
-      button1:"",
-      html_url: "https://github.com/GabrielCostaLuiz/baseReact",
-      homepage: "https://gabrielcostaluiz.github.io/baseReact/",
+      title: "Em construção",
+      description: "Carregando...",
+      imgUrl: construcao,
     },
     {
       title: "Em construção",
       description: "Carregando...",
       imgUrl: construcao,
-      button1:"",
-      
     },
     {
       title: "Em construção",

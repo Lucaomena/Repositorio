@@ -1,4 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
 import { Certificado } from "./Certificado";
 import Js1 from "../assets/img/certificados/Js1.png";
 import Js2 from "../assets/img/certificados/Js2.png";
@@ -21,6 +22,22 @@ import An2 from "../assets/img/certificados/An2.png";
 import An3 from "../assets/img/certificados/An3.png";
 import An4 from "../assets/img/certificados/An4.png";
 import An5 from "../assets/img/certificados/An5.png";
+import SoLnx1 from "../assets/img/certificados/SoLnx1.png";
+import SoLnx2 from "../assets/img/certificados/SoLnx2.png";
+import SoLnx3 from "../assets/img/certificados/SoLnx3.png";
+import SoLnx4 from "../assets/img/certificados/SoLnx4.png";
+import SoLnx5 from "../assets/img/certificados/SoLnx5.png";
+import SoLnx6 from "../assets/img/certificados/SoLnx6.png";
+import SoLnx7 from "../assets/img/certificados/SoLnx7.png";
+import SoLnx8 from "../assets/img/certificados/SoLnx8.png";
+import SoLnx9 from "../assets/img/certificados/SoLnx9.png";
+import SoLnx10 from "../assets/img/certificados/SoLnx10.png";
+import SoLnx11 from "../assets/img/certificados/SoLnx11.png";
+import SoLnx12 from "../assets/img/certificados/SoLnx12.png";
+import SoLnx13 from "../assets/img/certificados/SoLnx13.png";
+import SoLnx14 from "../assets/img/certificados/SoLnx14.png";
+import Bd1 from "../assets/img/certificados/Bd1.png";
+import Pbi3 from "../assets/img/certificados/Pbi3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -105,16 +122,6 @@ export const Certificados = () => {
             description: "Certificado Pensamento Computacional",
             imgUrl: Pensa,
         },
-        {
-            title: "Introdução ao Git e GitHub",
-            description: "Certificado GIT-Introdução",
-            imgUrl: Git1,
-        },
-        {
-            title: "Criando o primeiro repositório",
-            description: "Certificado GIT-Criando Repositório",
-            imgUrl: Git2,
-        },
     ]
     const certificados3 = [
         {
@@ -140,68 +147,99 @@ export const Certificados = () => {
     ]
     const certificados4 = [
         {
-            title: "Trabalhando com Páginas SPA com Angular",
-            description: "Certificado Angular-SPA",
-            imgUrl: An2,
+            title: "Introdução ao Sistema Operacioanl Linux",
+            description: "Certificado Introdução Linux",
+            imgUrl: SoLnx1,
         },
         {
-            title: "Arquitetura de componentes",
-            description: "Certificado Angular-Complexidade no Front",
-            imgUrl: An3,
+            title: "Instalando o Linux",
+            description: "Certificado Linux-Instalação",
+            imgUrl: SoLnx2,
         },
         {
-            title: "Instalando e preparando o ambiente Angular",
-            description: "Certificado Angular-Intalação",
-            imgUrl: An4,
+            title: "Acesso remoto a Máquinas Linux",
+            description: "Certificado Acesso remoto",
+            imgUrl: SoLnx3,
         },
         {
-            title: "Explorando diretivas com Angular",
-            description: "Certificado Angular-Diretivas",
-            imgUrl: An5,
+            title: "Manipulando arquivos",
+            description: "Certificado Manipulando arquivos com linux",
+            imgUrl: SoLnx4,
+        },
+        {
+            title: "Gerenciando Usuários no linux",
+            description: "Certificado Gerenciamento de usuários",
+            imgUrl: SoLnx5,
+        },
+        {
+            title: "Gerenciamento de pacotes Linux",
+            description: "Certificado Gerenciamento de pacotes",
+            imgUrl: SoLnx6,
+        },
+        {
+            title: "Gerenciamento de Discos no Linux",
+            description: "Certificado Gerenciamento de Discos",
+            imgUrl: SoLnx7,
+        },
+        {
+            title: "Copiando arquivos e manipulando processos",
+            description: "Certificado copiando arquivos no linux",
+            imgUrl: SoLnx8,
+        },
+        {
+            title: "Infraestrutura como código",
+            description: "Certificado Scripts de criação de estruturas",
+            imgUrl: SoLnx9,
+        },
+        {
+            title: "Servidor de arquivos como Linux",
+            description: "Certificado Linux-Servidor",
+            imgUrl: SoLnx10,
+        },
+        {
+            title: "Criando um Servidor Web",
+            description: "Certificado Linux-Servidor Web",
+            imgUrl: SoLnx11,
+        },
+        {
+            title: "Servidor de banco de dados",
+            description: "Certificado Linux-Servidor de Banco de dados",
+            imgUrl: SoLnx12,
+        },
+        {
+            title: "Infraestrutura como código",
+            description: "Certificado Provisionamento de um servidor",
+            imgUrl: SoLnx13,
+        },
+        {
+            title: "Docker",
+            description: "Certificado Utilização prática no cenário de microsserviços",
+            imgUrl: SoLnx14,
         },
     ]
     const certificados5 = [
         {
-            title: "Trabalhando com Páginas SPA com Angular",
-            description: "Certificado Angular-SPA",
-            imgUrl: An2,
+            title: "Introdução ao Git e ao GitHub",
+            description: "Certificado Git e GitHub",
+            imgUrl: Git1,
         },
         {
-            title: "Arquitetura de componentes",
-            description: "Certificado Angular-Complexidade no Front",
-            imgUrl: An3,
+            title: "Criando o primeiro repositório",
+            description: "Certificado Repositório Git",
+            imgUrl: Git2,
         },
-        {
-            title: "Instalando e preparando o ambiente Angular",
-            description: "Certificado Angular-Intalação",
-            imgUrl: An4,
-        },
-        {
-            title: "Explorando diretivas com Angular",
-            description: "Certificado Angular-Diretivas",
-            imgUrl: An5,
-        },
+
     ]
     const certificados6 = [
         {
-            title: "Trabalhando com Páginas SPA com Angular",
-            description: "Certificado Angular-SPA",
-            imgUrl: An2,
+            title: "Contexto da área banco de dados",
+            description: "Certificado Contextualização no cenário da área de banco de dados",
+            imgUrl: Bd1,
         },
         {
-            title: "Arquitetura de componentes",
-            description: "Certificado Angular-Complexidade no Front",
-            imgUrl: An3,
-        },
-        {
-            title: "Instalando e preparando o ambiente Angular",
-            description: "Certificado Angular-Intalação",
-            imgUrl: An4,
-        },
-        {
-            title: "Explorando diretivas com Angular",
-            description: "Certificado Angular-Diretivas",
-            imgUrl: An5,
+            title: "Power Bi Análise Avançada",
+            description: "Análise avançada",
+            imgUrl: Pbi3,
         },
     ]
 
@@ -235,10 +273,10 @@ export const Certificados = () => {
                                                 <Nav.Link eventKey="fifth">Git</Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link eventKey="sixth">Docker</Nav.Link>
+                                                <Nav.Link eventKey="sixth">Dados</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
-                                        
+
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                             <Tab.Pane eventKey="first">
                                                 <Row>

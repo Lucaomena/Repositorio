@@ -57,17 +57,6 @@ export const Skills = () => {
                                     <img src={meter1} alt="Image" />
                                     <h5>Empatia com o sentimento dos outros</h5>
                                 </div>
-
-                                <div className="circular">
-                                    <div style={{ width: 140, height: 140 }}>
-                                        <CircularProgressbarWithChildren value={percentage} >
-                                            <div style={{ fontSize: 30, marginTop: -0 }}>
-                                                <strong>{percentage}% </strong>
-                                            </div>
-                                        </CircularProgressbarWithChildren>
-                                    </div>
-                                    <h5>Pensamento crítico com foco em buscar soluções</h5>
-                                </div>
                             </Carousel>
                         </div>
                     </div>

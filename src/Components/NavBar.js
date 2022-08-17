@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import Curriculum from '../assets/img/CurriculumLucasOmena.pdf';
 import { HashLink } from 'react-router-hash-link';
 import nave from "../assets/img/images.png"
 import {
@@ -58,10 +56,6 @@ export const NavBar = () => {
                 <a href="https://web.facebook.com/lucas.omena.37/"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/lucaomena/"><img src={navIcon3} alt="" /></a>
               </div>
-
-              <HashLink to='#connect'>
-              <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
