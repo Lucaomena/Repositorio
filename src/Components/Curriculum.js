@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import cur from "../assets/img/CurriculumLucasOmena.pdf";
+import cur from "../assets/img/CurrículoLucasOmena.pdf";
 import { RiMailDownloadLine } from "react-icons/ri";
 
 export const Curriculum = () => {
